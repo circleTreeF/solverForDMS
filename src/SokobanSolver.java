@@ -42,7 +42,7 @@ public class SokobanSolver {
 		walls = new HashSet<Coordinate>();
 		goals = new HashSet<Coordinate>();
 		boxes = new HashSet<Coordinate>();
-		Scanner s = new Scanner(new File(filename));
+		Scanner s = new Scanner(new File("examples/" + filename));
 		row = Integer.parseInt(s.nextLine());
 		for (int i=0; i<row; i++) {
 			String next = s.nextLine();
